@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>雪山主峰詳細介紹 - 大圖片</title>
+    <style>
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #000000;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .large-image {
+        max-width: 90%;
+        max-height: 90%;
+        cursor: pointer;
+    }
+
+    </style>
+</head>
+<body>
+
+<img class="large-image" src="img/雪山_detail1.jpeg" alt="大圖片">
+
+<script>
+    document.body.addEventListener('click', function(event) {
+        if (event.target.classList.contains('large-image')) {
+        } else {
+            history.back();
+        }
+    });
+</script>
+
+</body>
+</html>
